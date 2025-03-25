@@ -1,12 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-public class GrafoDirecionado {
+public class Main {
     private int n; // Número de vértices
     private List<List<Integer>> listaSucessores;
     private List<List<Integer>> listaPredecessores;
 
-    public GrafoDirecionado(String arquivo) throws IOException {
+    public Main(String arquivo) throws IOException {
         carregarGrafo(arquivo);
     }
 
@@ -72,11 +72,13 @@ public class GrafoDirecionado {
     }
 
     public static void main(String[] args) {
-        String nomeArquivo = "graph-test-100.txt"; // Nome do arquivo 
+        //String nomeArquivo = "graph-test-100.txt"; // Nome do arquivo 
+         Scanner sc = new Scanner(System.in);
         try {
-            GrafoDirecionado grafo = new GrafoDirecionado(nomeArquivo);
+            System.out.print("Digite o nome do arquivo: ");
+            String nomeArquivo = sc.nextLine();
+            Main grafo = new Main(nomeArquivo);
             
-            Scanner sc = new Scanner(System.in);
             System.out.print("Digite o número do vértice: ");
             int vertice = sc.nextInt();
             sc.close();
