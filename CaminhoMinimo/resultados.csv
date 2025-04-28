@@ -1,0 +1,9 @@
+Grafo,Vertices,Arestas,Tempo(ms)
+grafo_aleatorio_100.txt,100,500,16.5523
+grafo_aleatorio_400.txt,400,2000,11.0705
+grafo_aleatorio_700.txt,700,3500,17.4129
+grafo_aleatorio_1000.txt,1000,5000,26.8704
+grafo_grade_10x10.txt,100,180,1.2368
+grafo_grade_20x20.txt,400,760,4.3483
+grafo_grade_30x30.txt,900,1740,11.5989
+grafo_grade_40x40.txt,1600,3120,16.0033
